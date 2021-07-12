@@ -1,0 +1,41 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+#camera,
+#camera__view {
+	position: fixed;
+	height: 70%;
+	width: 70%;
+	left: 15%;
+	top: 10%;
+}
+#camera__view {
+	transform: scaleX(-1);
+}
+
+#camera__trigger {
+	width: 200px;
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	border-radius: 30px;
+	border: none;
+	padding: 15px 20px;
+	text-align: center;
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+	position: fixed;
+	bottom: 30px;
+	left: calc(50% - 100px);
+}
+
+#camera__trigger:hover {
+	background-color: lightgreen;
+}
+
+#camera__trigger:active {
+	background-color: darkgreen;
+}
